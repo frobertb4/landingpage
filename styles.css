@@ -1,0 +1,31 @@
+img {
+    width: auto;
+    height: auto;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+header, .hero, footer {
+    background-color: #1F2937;
+}
+
+h1 {
+    size: 48px;
+    weight: 900;
+    color: #F9FAF8;
+}
+
+.hero div, .links {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
