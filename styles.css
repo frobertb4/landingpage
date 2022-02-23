@@ -53,6 +53,10 @@ footer {
 }
 /*end specified color declarations*/
 
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -65,7 +69,7 @@ body > * {
 }
 
 .section1 img {
-    height: 18.5rem;
+    max-width: 380px;
 }
 
 .section2 img {
@@ -100,7 +104,7 @@ ul {
 .section1 {
     display: flex;
     flex: 1;
-    gap: 16px;
+    gap: 24px;
 }
 
 .information {
@@ -199,4 +203,9 @@ header, footer {
 .text1 {
     font-size: 20px;
     font-weight: 700;
+}
+
+.section1 .container .text {
+    flex: 1;
+    padding-top: 8px;
 }
