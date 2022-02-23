@@ -30,7 +30,8 @@ button {
     font-size: 36px;
     font-weight: 900;
     color: #1f2937;
-    padding-top: 50px;
+    display: flex;
+    justify-content: center;
 }
 
 .section3 {
@@ -107,17 +108,9 @@ ul {
     gap: 24px;
 }
 
-.information {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 0px;
-}
-
 .section2 {
     display: flex;
     justify-content: space-between;
-    padding-top: 18px;
-    padding-bottom: 50px;
 }
 
 .section2 img {
