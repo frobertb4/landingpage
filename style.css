@@ -1,6 +1,4 @@
-* {
-    border: 1px solid green;
-}
+
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -41,6 +39,7 @@ h2 {
     font-size: 36px;
     font-weight: 900;
     color: #1F2937;
+    text-align: center;
 }
 
 .quote {
@@ -56,6 +55,14 @@ h2 {
     font-size: 20px;
 }
 
+.info img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border: 5px solid #3882f6;
+    border-radius: 20px;
+}
+
 
 /* Flexbox decorations (other than in the body) */
 
@@ -69,4 +76,23 @@ h2 {
 .links {
     display: flex;
     gap: 20px;
+}
+
+.section {
+    display: flex;
+}
+
+.section.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.boxes {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 40px
+}
+
+.boxes div {
+    flex: 1 1 200px;
 }
