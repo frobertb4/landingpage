@@ -1,5 +1,3 @@
-
-
 body {
     font-family: 'Roboto', sans-serif;
     display: flex;
@@ -21,7 +19,9 @@ a {
 h1 {
     font-size: 48px;
     font-weight: 900;
-    color: #f9faf8
+    color: #f9faf8;
+    margin-top: 32px;
+    margin-bottom: 0px;
 }
 
 .hero p,
@@ -53,18 +53,17 @@ h2 {
     font-style: normal;
     font-weight: 900;
     font-size: 20px;
+    text-align: end;
+    margin-top: 4px;
 }
 
-.info img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border: 5px solid #3882f6;
-    border-radius: 20px;
+/* Flexbox decorations */
+
+.section,
+.header {
+    padding-left: 200px;
+    padding-right: 200px;
 }
-
-
-/* Flexbox decorations (other than in the body) */
 
 .header {
     display: flex;
@@ -78,21 +77,123 @@ h2 {
     gap: 20px;
 }
 
-.section {
+.section.hero {
     display: flex;
+    gap: 30px;
 }
 
-.section.info {
+.child {
     display: flex;
-    flex-direction: column;
+    align-self: center;
+    margin-top: 40px;
+    margin-bottom: 32px;
 }
 
 .boxes {
     display: flex;
-    flex-wrap: nowrap;
-    gap: 40px
+    justify-content: center;
+    gap: 100px;
 }
 
 .boxes div {
-    flex: 1 1 200px;
+    text-align: center;
+    flex: 0 1 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.boxes div img {
+    border: 5px solid #3882f6;
+    object-fit: cover;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.section.action {
+    margin: 50px 400px;
+    padding: 12px 50px;
+    display: flex;
+    border-radius: 25px;
+    gap: 20px;
+}
+
+.section.action p {
+    color: white;
+}
+
+.action .big {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 0px;
+}
+
+.action .button {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.button button {
+    font-size: 16px;
+    border: 3px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #3882f6;
+    color: white;
+    text-wrap: nowrap;
+    padding: 10px 30px;
+}
+
+.action .left {
+    flex: 5;
+}
+
+.footer p {
+    text-align: center;
+    padding: 10px;
+}
+
+.bottom {
+    margin-top: 5px;
+    margin-bottom: 24px;
+}
+
+.child img {
+    width: 100%;
+    height: 100%;
+}
+
+.section.hero button {
+    margin-bottom: 32px;
+}
+
+.left button {
+    color: white;
+    padding: 8px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+}
+
+.quote p {
+    padding: 0px 100px;
+}
+
+.cite {
+    margin-bottom: 10px;
+}
+
+.section.hero .left {
+    display: flex;
+    flex-direction: column;
+}
+
+.section.hero .left div {
+    flex: 1;
+}
+
+.section.hero .left .button {
+    flex: 0;
 }
